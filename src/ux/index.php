@@ -18,6 +18,10 @@
         <tr>
             <th>Id</th>
             <th>Mediciones</th>
+            <th>Latitud</th>
+            <th>Longitud</th>
+            <th>Major</th>
+            <th>Minor</th>
         </tr>
         <?php
           $conn=new mysqli("localhost", "root", "", "appleire");
@@ -33,6 +37,10 @@
         <tr>
             <td><?php echo $mostrar['ID']?></td>
             <td><?php echo $mostrar['Medicion']?></td>
+            <td><?php echo $mostrar['Latitud']?></td>
+            <td><?php echo $mostrar['Longitud']?></td>
+            <td><?php echo $mostrar['Major']?></td>
+            <td><?php echo $mostrar['Minor']?></td>
         </tr>
 
         <?php
@@ -40,13 +48,12 @@
               ?>
     </table>
 
-    <h3>mostrar últimas mediciones</h3>
-    <form action="../logica/obtenerUltimasMediciones.php" method="POST">
-        <p>Cuantas</p>
-        <label for="cuantas">Ultimas mediciones que quiere coger</label>
+    <h3>Mostrar últimas mediciones</h3>
+    <form action="obtenerUltimasMediciones.php" method="POST">
+        <label for="cuantas">Inserte las últimas mediciones que quiere coger</label>
         <br>
         <input type="text" name="cuantas" id="cuantas" required>
-        <input type="submit" value="Guardar">
+        <input type="submit" value="Mostrar">
     </form>
 </body>
 

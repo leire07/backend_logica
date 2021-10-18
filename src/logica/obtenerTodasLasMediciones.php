@@ -10,9 +10,12 @@ if($_SERVER["REQUEST_METHOD"]=="GET"){
     $Medicion=$jsonData->{'Medicion'};;
     $Latitud=$jsonData->{'Latitud'};;
     $Longitud=$jsonData->{'Longitud'};;
+    $Major=$jsonData->{'Major'};;
+    $Minor=$jsonData->{'Minor'};;
     
     //$query="INSERT INTO tabla (Medicion) VALUES('".$Medicion."')";
-    $query="SELECT FROM tabla(Medicion, Latitud, Longitud) VALUES ('".$Medicion."','".$Latitud."','".$Longitud."')";
+    $query="SELECT FROM tabla(Medicion, Latitud, Longitud, Major, Minor) VALUES ('".$Medicion."','".$Latitud."','".$Longitud."',
+    '".$Major."','".$Minor."')";
     
     $resultado=$conn->query($query);
     if($resultado==true){

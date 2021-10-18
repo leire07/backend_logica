@@ -9,12 +9,15 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     $Longitud=$jsonData->{'Longitud'};;
     
     //$query="INSERT INTO tabla (Medicion) VALUES('".$Medicion."')";
+    // Insertar a la base de datos
     $query="INSERT INTO tabla(Medicion, Latitud, Longitud) VALUES ('".$Medicion."','".$Latitud."','".$Longitud."')";
     
     $resultado=$conn->query($query);
     if($resultado==true){
+        //si todo sale bien, entonces:
     echo "Los datos se introducen de forma correcta";
 }else{
+        //si algo va mal
     echo "Error al insertar datos";
 }
     
