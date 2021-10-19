@@ -1,3 +1,6 @@
+<!-- conexion.php
+// 18/10/2021
+// Leire Villarroya Martínez
 <!-- Z -> obtenerUltimasMediciones() -> [mediciones] -->
 <?php //Abrimos php
 	//hacemos la conexion para la base de datos:

@@ -1,4 +1,8 @@
-// obtenerTodasLasMediciones --> [mediciones]
+<!-- 
+// conexion.php
+// 18/10/2021
+// Leire Villarroya Martínez
+// obtenerTodasLasMediciones -> [mediciones] -->
 
 
 <?php

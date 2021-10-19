@@ -1,3 +1,7 @@
+<!-- // guardarMediciones.php
+// 18/10/2021
+// Leire Villarroya Martínez
+// Guardar las mediciones a la bbdd -->
 <?php
 if($_SERVER["REQUEST_METHOD"]=="POST"){
     require_once '../conexiones/conexion.php';
