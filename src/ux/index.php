@@ -1,3 +1,8 @@
+<!--// index.php
+// 18/10/2021
+// Leire Villarroya Martínez
+// Index del backend donde se muestran los métodos de la lógica y se pueden probar -->
+
 <!DOCTYPE html>
 <html lang="es">
 
